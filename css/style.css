@@ -1,0 +1,210 @@
+.main-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.main-header a {
+    color: #FFFFFF;
+}
+
+.main-header__top {
+    background-color: rgba(34, 34, 34, 1);
+    font-size: 10px;
+
+}
+
+.main-header__bottom {
+    background-color: rgba(240, 168, 62, 1);
+
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+
+.hero {
+    background-image: url("../images/hero.png");
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero div {
+    display: inline-block;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    color: rgba(60, 35, 19, 1);
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero p, .hero button {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(60, 35, 19, 1);
+}
+
+.hero button {
+    color: #FFFFFF;
+    padding: 15px 23px;
+    text-transform: uppercase;
+    background-color: rgba(240, 168, 62, 1);
+    border-radius: 5px;
+    border: none;
+    margin-top: 12px;
+}
+
+.destacados h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgba(60, 35, 19, 1);
+
+}
+
+.destacados li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.destacados .card {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.destacados .card h3 {
+    color: rgba(60, 35, 19, 1);
+}
+
+.destacados .card p {
+    color: rgba(240, 168, 62, 1);
+
+}
+
+.contactanos h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(60, 35, 19, 1);
+}
+
+.contactanos label, .contactanos input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+
+.contactanos input::placeholder {
+    color: #FFFFFF;
+}
+
+.contactanos .form-group {
+    width: 340px;
+    height: 40px;
+    background-color: rgba(60, 35, 19, 1);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.contactanos button {
+    width: 110px;
+    height: 34px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.contactanos #reset {
+ background: rgba(138, 135, 135, 1);
+}
+
+.contactanos [type="submit"] {
+    background-color: rgba(240, 168, 62, 1);
+}
+
+footer h3, footer .footer-card h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+footer header {
+    background-color: rgba(240, 168, 62, 1);
+}
+
+footer .form-group {
+    width: 270px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+footer label, footer input, footer input::placeholder {
+    color: rgba(160, 160, 160, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    border: none;
+    background-color: transparent;
+}
+
+footer [type="submit"] {
+    background-color: rgba(60, 35, 19, 1);
+    padding: 11px;
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+}
+
+.footer-card p {
+    color: rgba(138, 135, 135, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.footer-mid {
+    background-color: rgba(60, 35, 19, 1);
+}
+
+.footer-bottom {
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.footer-bottom p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    /* background-color: #FFFFFF; */
+    color: #FFFFFF  ;
+}

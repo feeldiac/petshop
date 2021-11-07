@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07b6893f25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Petshop</title>
 </head>
 <body>
-    <header>
-        <div>
+    <header class="main-header">
+        <div class="main-header__top">
             <p>Grandes ofertas en comederos</p>
             <span>
                 <p>Español</p>
@@ -19,14 +24,14 @@
                 <img src="images/down.png" alt="">
             </span>
         </div>
-        <div>
+        <div class="main-header__bottom">
             <img src="images/logo.svg" alt="logo frontcat&dog">
             <nav>
-                <ul style="list-style-image: url('images/pawprint.png');" >
-                    <li><a href="#">Categorías</a></li>
-                    <li><a href="#">Pets</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contáctanos</a></li>
+                <ul>
+                    <li><a href="#"><i class="fas fa-paw"></i> Categorías</a></li>
+                    <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
+                    <li><a href="#"><i class="fas fa-paw"></i> Nosotros</a></li>
+                    <li><a href="#"><i class="fas fa-paw"></i> Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -74,10 +79,16 @@
     <section class="contactanos">
         <h2>Contáctanos</h2>
         <form action="">
+            <div class="form-group">
             <label for=""><input type="text" placeholder="Nombre y Apellido"></label>
+            </div>
+            <div class="form-group">
             <label for=""><input type="email" placeholder="Ingresá tu correo electrónico"></label>
+            </div>
+            <div class="form-group">
             <label for=""><input type="tel" placeholder="Teléfono"></label>
-            <button>Resetear</button>
+            </div>
+            <button id="reset">Resetear</button>
             <button type="submit">Enviar</button>
         </form>
     </section>
@@ -89,12 +100,14 @@
             </div>
             <div>
                 <form action="">
-                    <input type="email" placeholder="Ingresá tu correo electrónico">
+                    <div class="form-group">
+                    <label for=""><input type="email" placeholder="Ingresá tu correo electrónico"></label>
+                    </div>
                     <button type="submit">Suscribirme</button>
                 </form>
             </div>
         </header>
-        <div>
+        <div class="footer-mid">
             <div class="footer-cards">
                 <!-- footer card #1 -->
                 <div class="footer-card">
@@ -116,11 +129,16 @@
                 </div>
             </div>
             <div>
-                <img src="images/logo.svg" alt="logo frontcat&dog">
+                <img src="images/logo-footer.svg" alt="logo frontcat&dog">
             </div>
         </div>
-        <div>
+        <div class="footer-bottom">
             <p>Todos los derechos reservados Front End</p>
+            <div>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 </body>
