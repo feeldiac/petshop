@@ -1,23 +1,11 @@
-.main-header {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    color: #FFFFFF;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main-header a {
-    color: #FFFFFF;
-}
-
-.main-header__top {
-    background-color: rgba(34, 34, 34, 1);
+html {
     font-size: 10px;
-
-}
-
-.main-header__bottom {
-    background-color: rgba(240, 168, 62, 1);
-
 }
 
 a, a:visited {
@@ -27,64 +15,150 @@ ul {
     list-style-type: none;
 }
 
+section {
+    padding-block: 4.5rem;
+}
+
+.main-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.main-header a {
+    color: #FFFFFF;
+}
+
+.main-header__top {
+    background-color: rgba(34, 34, 34, 1);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.main-header__bottom {
+    background-color: rgba(240, 168, 62, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    padding-inline: 4rem;
+}
+
+.main-header__bottom nav {
+    display: none;
+}
+
+.fa-bars {
+    color: #FFFFFF;
+}
 
 .hero {
     background-image: url("../images/hero.png");
+    background-repeat: no-repeat;
+    /* background-position: left; */
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    align-items: flex-end;
+    padding-block: 13rem;
 }
 
 .hero div {
-    display: inline-block;
-    padding: 10px;
+    /* display: inline-block; */
+    padding: 1rem;
     background-color: #FFFFFF;
-    border-radius: 5px;
-    margin-bottom: 12px;
+    border-radius: .5rem;
+    align-self: center;
+    /* margin-bottom: 1.2rem; */
 }
 
 .hero h2 {
     color: rgba(60, 35, 19, 1);
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
     margin: 0;
 }
 
 .hero p, .hero button {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     color: rgba(60, 35, 19, 1);
+    margin-right: 25%;
+    color: #FFFFFF;
+
 }
 
 .hero button {
-    color: #FFFFFF;
-    padding: 15px 23px;
-    text-transform: uppercase;
+    padding: 1.5rem 2.3rem;
+    text-transform: capitalize;
+    /* text-decoration: underline; */
     background-color: rgba(240, 168, 62, 1);
-    border-radius: 5px;
+    border-radius: .5rem;
     border: none;
-    margin-top: 12px;
+    margin-top: 1.2rem;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .destacados h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 4rem;
     color: rgba(60, 35, 19, 1);
 
+}
+
+.destacados ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.1rem;
+}
+
+.destacados ul li::marker {
+    color: rgba(102, 102, 102, 1);
+    content: '—  ';
+}
+
+.destacados ul li:first-child::marker {
+    content: '';
 }
 
 .destacados li a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: rgba(102, 102, 102, 1);
+}
+
+.destacados .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .destacados .card {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
 }
 
 .destacados .card h3 {
@@ -94,6 +168,20 @@ ul {
 .destacados .card p {
     color: rgba(240, 168, 62, 1);
 
+}
+
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contactanos form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .contactanos h2 {
@@ -110,7 +198,12 @@ ul {
     color: #FFFFFF;
     border: none;
     background-color: transparent;
+    width: 100%;
 }
+
+/* .contactanos input {
+    width: 100%;
+} */
 
 .contactanos input::placeholder {
     color: #FFFFFF;
@@ -120,8 +213,20 @@ ul {
     width: 340px;
     height: 40px;
     background-color: rgba(60, 35, 19, 1);
-    border-radius: 15px;
-    margin-bottom: 10px;
+    border-radius: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.contactanos .btn-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contactanos button {
@@ -135,12 +240,17 @@ ul {
     border: none;
 }
 
+
 .contactanos #reset {
  background: rgba(138, 135, 135, 1);
 }
 
 .contactanos [type="submit"] {
     background-color: rgba(240, 168, 62, 1);
+}
+
+footer {
+    padding-block-start: 4.5rem;
 }
 
 footer h3, footer .footer-card h4{
@@ -152,6 +262,22 @@ footer h3, footer .footer-card h4{
 
 footer header {
     background-color: rgba(240, 168, 62, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+.footer-header-left {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.footer-header-right form{
+    display: flex;
+    gap: 1.7rem;
+
 }
 
 footer .form-group {
@@ -159,6 +285,9 @@ footer .form-group {
     height: 40px;
     background-color: #FFFFFF;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
 }
 
 footer label, footer input, footer input::placeholder {
@@ -168,6 +297,7 @@ footer label, footer input, footer input::placeholder {
     font-size: 9px;
     border: none;
     background-color: transparent;
+    width: 100%;
 }
 
 footer [type="submit"] {
@@ -190,10 +320,43 @@ footer [type="submit"] {
 
 .footer-mid {
     background-color: rgba(60, 35, 19, 1);
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-inline: 15%;
+}
+
+.footer-card {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo {
+    align-self: center;
+    order: -1;
 }
 
 .footer-bottom {
     background-color: rgba(34, 34, 34, 1);
+    padding-block: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15%;
 }
 
 .footer-bottom p {
@@ -204,7 +367,12 @@ footer [type="submit"] {
     text-align: center;
 }
 
+.footer-bottom div {
+    display: flex;
+    justify-content: space-between;
+    gap: .8rem;
+}
+
 .fa-facebook, .fa-twitter, .fa-instagram {
-    /* background-color: #FFFFFF; */
     color: #FFFFFF  ;
 }

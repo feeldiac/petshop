@@ -34,6 +34,7 @@
                     <li><a href="#"><i class="fas fa-paw"></i> Contáctanos</a></li>
                 </ul>
             </nav>
+            <i class="fas fa-bars fa-2x"></i>
         </div>
     </header>
     <div class="hero">
@@ -41,7 +42,7 @@
             <h2>¡Es un placer tenerte aquí!</h2>
         </div>
         <p>¡Comederos en descuento!</p>
-        <button>comederos</button>
+        <button>comederos &#127836;</button>
     </div>
     <section class="destacados">
         <img src="images/pawprint-big.svg" alt="pawprint">
@@ -88,17 +89,19 @@
             <div class="form-group">
             <label for=""><input type="tel" placeholder="Teléfono"></label>
             </div>
-            <button id="reset">Resetear</button>
-            <button type="submit">Enviar</button>
+            <div class="btn-group">
+                <button id="reset">Resetear</button>
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </section>
     <footer>
         <header>
-            <div>
+            <div class="footer-header-left">
                 <img src="images/suscribete-icon.svg" alt="suscribete icono">
                 <h3>Suscríbete para más novedades</h3>
             </div>
-            <div>
+            <div class="footer-header-right">
                 <form action="">
                     <div class="form-group">
                     <label for=""><input type="email" placeholder="Ingresá tu correo electrónico"></label>
@@ -112,23 +115,29 @@
                 <!-- footer card #1 -->
                 <div class="footer-card">
                     <img src="images/localidad-icon.svg" alt="icono localidad">
-                    <h4>Localidad</h4>
-                    <p>Calle - provincia</p>
+                    <div class="footer-card-content">
+                        <h4>Localidad</h4>
+                        <p>Calle - provincia</p>
+                    </div>
                 </div>
                 <!-- footer card #2 -->
                 <div class="footer-card">
                     <img src="images/telefono-icon.svg" alt="icono telefono">
-                    <h4>Teléfono</h4>
-                    <p>Número de teléfono</p>
+                    <div class="footer-card-content">
+                        <h4>Teléfono</h4>
+                        <p>Número de teléfono</p>
+                    </div>
                 </div>
                 <!-- footer card #3 -->
                 <div class="footer-card">
                     <img src="images/correo-icon.svg" alt="icono correo">
-                    <h4>Correo electrónico</h4>
-                    <p>Dirección de correo</p>
+                    <div class="footer-card-content">
+                        <h4>Correo electrónico</h4>
+                        <p>Dirección de correo</p>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div class="footer-logo">
                 <img src="images/logo-footer.svg" alt="logo frontcat&dog">
             </div>
         </div>
