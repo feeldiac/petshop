@@ -60,6 +60,8 @@ section {
 .hero {
     background-image: url("../images/hero.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -102,6 +104,7 @@ section {
     border-radius: .5rem;
     border: none;
     margin-top: 1.2rem;
+    cursor: pointer;
 }
 
 .destacados {
@@ -245,6 +248,7 @@ section {
 
 .contactanos [type="submit"] {
     background-color: rgba(240, 168, 62, 1);
+    cursor: pointer;
 }
 
 footer {
@@ -307,6 +311,7 @@ footer [type="submit"] {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 9px;
+    cursor: pointer;
 }
 
 
@@ -433,7 +438,6 @@ footer [type="submit"] {
 
     .destacados .cards {
         flex-direction: row;
-
     }
 
     footer header {
@@ -447,7 +451,7 @@ footer [type="submit"] {
     }
 
     .footer-logo {
-        width: 100%;
+        width: 70%;
         order: 0;
         display: flex;
         justify-content: flex-end;
