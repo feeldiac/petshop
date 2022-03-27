@@ -58,7 +58,7 @@ section {
 }
 
 .hero {
-    background-image: url("../images/hero.png");
+    background-image: url("../assets/img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
